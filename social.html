@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <title>Social Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+            color: #fff;
+            font-size: 16px;
+            overflow-y: auto; /* Allow scrolling */
+            backdrop-filter: blur(5px); /* Subtle background blur */
+            padding: 20px;
+        }
+
+        .social-media {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 0.6s ease-out; /* Smooth fade-in animation */
+            margin: 20px; /* Add margin for spacing */
+            overflow: hidden;
+            border: 5px solid #fff; /* Clean white border */
+        }
+
+        .social-media h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Text shadow for extra depth */
+        }
+
+        .social-media p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px; /* Extra spacing above the back button */
+        }
+
+        .social-link {
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #4a90e2;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-link:hover {
+            background-color: #337ab7;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link i {
+            font-size: 1.5rem;
+        }
+
+        /* Back to Homepage Button */
+        .back-homepage {
+            margin-top: 30px; /* Extra margin to lower the button */
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 30px;
+            color: #fff;
+            background-color: #555;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .back-homepage:hover {
+            background-color: #333;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="social-media">
+        <h1>Social Media</h1>
+        <p>"Connect with me on my social media platforms and stay updated on my latest activities and projects."</p>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/ha_ziqarf/" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@hzq.arf?lang=en" target="_blank" class="social-link">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-haziq-53941a310/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+
+        <a href="index.html" class="back-homepage">← Back to Homepage</a>
+    </div>
+
+</body>
+</html>
+
