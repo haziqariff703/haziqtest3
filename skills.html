@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <title>My Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            padding: 20px;
+        }
+
+        .skills {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .skills h1 {
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .skill {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .skill p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .progress {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 25px;
+            margin-top: 15px;
+            height: 15px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 25px;
+        }
+
+        .html-bar {
+            width: 90%;
+            background-color: #4caf50;
+        }
+
+        .microsoft-office-bar {
+            width: 80%;
+            background-color: #2196f3;
+        }
+
+        .graphic-design-bar {
+            width: 70%;
+            background-color: #f44336;
+        }
+
+        .teamwork-bar {
+            width: 85%;
+            background-color: #ff9800;
+        }
+
+        .communication-bar {
+            width: 23%;
+            background-color: #9c27b0;
+        }
+
+        .back-button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 30px;
+            color: #fff;
+            background-color: #4a90e2;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #337ab7;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="skills">
+        <h1>My Skills</h1>
+        <p>"These are my core skills in various categories, each with a progress bar to visually represent my proficiency."</p>
+
+        <div class="skills-container">
+            <!-- Technical Skills -->
+            <div class="skill">
+                <h2>HTML</h2>
+                <p>Expert in structuring websites with HTML5.</p>
+                <div class="progress">
+                    <div class="progress-bar html-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h2>Microsoft Office</h2>
+                <p>Experienced with Word, Excel, and PowerPoint for efficient document, data, and presentation creation.</p>
+                <div class="progress">
+                    <div class="progress-bar microsoft-office-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h2>Graphic Design</h2>
+                <p>Proficient in Photoshop and Illustrator for creating impactful visuals.</p>
+                <div class="progress">
+                    <div class="progress-bar graphic-design-bar"></div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill">
+                <h2>Teamwork</h2>
+                <p>Able to work effectively with teams, contributing to shared success.</p>
+                <div class="progress">
+                    <div class="progress-bar teamwork-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h2>Communication</h2>
+                <p>Excellent communication skills to articulate ideas clearly and listen actively.</p>
+                <div class="progress">
+                    <div class="progress-bar communication-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Homepage Button -->
+        <a class="back-button" href="index.html">← Back to Homepage</a>
+    </div>
+
+</body>
+</html>

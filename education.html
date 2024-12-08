@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <title>Education</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b); /* New gradient background */
+            color: #fff;
+            font-size: 16px;
+            overflow-y: auto;
+            backdrop-filter: blur(5px);
+            padding: 20px;
+        }
+
+        .education {
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 0.6s ease-out;
+            margin: 20px;
+            overflow: hidden;
+            border: 5px solid #fff;
+        }
+
+        .education h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #2c3e50; /* Darker shade for better contrast */
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .education p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #34495e; /* Darker text color for readability */
+            margin-bottom: 30px;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            color: #2c3e50; /* Darker text color for table */
+        }
+
+        table th {
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        .education a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 30px;
+            color: #fff;
+            background-color: #4a90e2;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            margin-top: 30px; /* Add margin to move button down */
+        }
+
+        .education a:hover {
+            background-color: #337ab7;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="education">
+        <h1>Education</h1>
+        <p>"Throughout my academic journey, I have pursued studies that have not only challenged me intellectually but also equipped me with essential skills for my career. My educational background reflects a commitment to learning and personal growth, with a focus on areas that align with my professional goals."</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Place of Education</th>
+                    <th>Certificate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021</td>
+                    <td>SMK Seksyen 5 Wangsa Maju</td>
+                    <td>SPM</td>
+                </tr>
+                <tr>
+                    <td>2022-2025</td>
+                    <td>Universiti Teknologi Mara (UITM) Kampus Rembau</td>
+                    <td>Diploma in Information Management</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="index.html">← Back to Homepage</a>
+    </div>
+
+</body>
+</html>

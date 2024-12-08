@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <title>Haziq's Homepage</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Sunset Gradient Background */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #FF7E5F, #FDAB73, #FFD700);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Minimalist Profile Picture */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #fdfdfd;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* Section Styles */
+        .section-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto; /* Allow flexible height */
+            max-height: 350px; /* Max height for sections */
+            overflow-y: auto; /* Allow vertical scrolling if content overflows */
+        }
+
+        .section img {
+            width: 100%;
+            height: 850px; /* Ensure image fills the box height */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Back to Homepage Button */
+        .back-to-homepage a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 30px;
+            color: #fff;
+            background-color: #4a90e2;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            margin-top: 20px;
+        }
+
+        .back-to-homepage a:hover {
+            background-color: #357ab7;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagehaziq.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Welcome to Haziq's Homepage</h1>
+        <p>Selamat Datang!!!</p>
+    </header>
+
+    <div class="container">
+        <!-- Football Section -->
+        <a href="football.html" class="section-link">
+            <div class="section">
+                <img src="football.jpg" alt="Football Picture">
+                <h2>Football</h2>
+                <p>I enjoy playing football as it's a great way to stay active, work as a team, and have fun with friends. Whether it’s playing on a team or just with friends, football is a great bonding activity.</p>
+            </div>
+        </a>
+
+        <!-- Running Section -->
+        <a href="running.html" class="section-link">
+            <div class="section">
+                <img src="running.jpg" alt="Running Picture">
+                <h2>Running</h2>
+                <p>Running keeps me fit and helps clear my mind. I love challenging myself with new goals, whether it's running a faster pace or longer distances.</p>
+            </div>
+        </a>
+
+        <!-- Hiking Section -->
+        <a href="hiking.html" class="section-link">
+            <div class="section">
+                <img src="hiking1.jpg" alt="Hiking Picture">
+                <h2>Hiking</h2>
+                <p>Hiking allows me to connect with nature and experience breathtaking views while staying active. It’s a great way to disconnect and recharge in the outdoors.</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Back to Homepage Button -->
+    <div class="back-to-homepage">
+        <a href="index.html">← Back to Homepage</a>
+    </div>
+
+</body>
+</html>

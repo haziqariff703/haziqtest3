@@ -1,0 +1,217 @@
+<html lang="en"> 
+<head>
+    <title>Haziq's Homepage</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Sunset Gradient Background */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #FF7E5F, #FDAB73, #FFD700);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Minimalist Profile Picture */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #fdfdfd;
+        }
+
+        /* Add GIF to the header */
+        .gif {
+            margin-top: 20px;
+        }
+
+        .gif img {
+            width: 300px; /* Adjust size */
+            border-radius: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* Section Styles */
+        .section-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 200px; /* Ensure all sections have the same height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-icon {
+            font-size: 2.5rem;
+            color: #4a90e2;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .section:hover .section-icon {
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="haziq2.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Welcome to Haziq's Homepage</h1>
+        <p>Selamat Datang!!!</p>
+
+        <!-- Add the GIF below the text -->
+        <div class="gif">
+            <img src="guitargif.gif" alt="Fun Animation GIF">
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Biodata Section -->
+        <a href="biodata.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">👤</div>
+                <h2>Biodata</h2>
+                <p>Learn more about my personal details.</p>
+            </div>
+        </a>
+
+        <!-- Experience Section -->
+        <a href="experience.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">💼</div>
+                <h2>Experience</h2>
+                <p>Discover my professional journey.</p>
+            </div>
+        </a>
+
+        <!-- Education Section -->
+        <a href="education.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">🎓</div>
+                <h2>Education</h2>
+                <p>See my academic background.</p>
+            </div>
+        </a>
+
+        <!-- Family Section -->
+        <a href="family.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">🏠</div>
+                <h2>Family</h2>
+                <p>Get to know my family members.</p>
+            </div>
+        </a>
+
+        <!-- Skills Section -->
+        <a href="skills.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">🛠️</div>
+                <h2>Skills</h2>
+                <p>Check out my skillset.</p>
+            </div>
+        </a>
+
+        <!-- Hobbies Section -->
+        <a href="hobbies.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">⚽</div>
+                <h2>Hobbies</h2>
+                <p>Explore what I enjoy doing in my free time.</p>
+            </div>
+        </a>
+
+        <!-- Internship Section -->
+        <a href="internship.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">🏆</div>
+                <h2>Internship</h2>
+                <p>Discover my internship experiences.</p>
+            </div>
+        </a>
+
+        <!-- Social Media Section -->
+        <a href="social.html" class="section-link">
+            <div class="section">
+                <div class="section-icon">🌐</div>
+                <h2>Social Media</h2>
+                <p>Follow me on Instagram, Facebook, and Twitter.</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
